@@ -79,24 +79,17 @@ const canWeDeliver = zip => {
 */
 
 // CODE HERE
-//come back to this
-// const canWeDeliverTwo = (zip, cb) => {
-//     deliveryAreaZipCodes.forEach(element => {
-//         if (element == zip) {
-//             return cb(true)
-//         } 
-//         return cb(false)
-//     })
-// }
+const canWeDeliver2 = zip => {
+    deliveryAreaZipCodes.forEach(element => {
+        if (element === zip) {
+            return "You're in our deliver zone!"
+        } else {
+            return "Sorry we can't deliver to that address"
+        }
+    }) 
+}
 
-// canWeDeliverTwo(85205, (bool) => {
-//     if (bool) {
-//         console.log("You're in our deliver zone!")
-//     }
-//     console.log("Sorry we can't deliver to that address")
-// })
-
-
+// console.log(canWeDeliver(85205))
 
 //////////////////PROBLEM 3////////////////////
 /* 
