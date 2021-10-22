@@ -35,9 +35,11 @@ const cart = [
 
 //CODE HERE
 
+const summedPrice = cart.reduce((acc, curr) => {
+    return acc + curr.price
+},0)
 
-const summedPrice = cart.reduce()
-
+console.log(summedPrice)
 
 //////////////////PROBLEM 2////////////////////
 /*  
@@ -55,7 +57,7 @@ const summedPrice = cart.reduce()
 */
 
 //CODE HERE
-
+const calcFinalPrice = (cartTotal, couponValue, tax) => coupon - (cartTotal + (cartTotal * tax))
 
 
 //////////////////PROBLEM 3////////////////////
@@ -80,6 +82,8 @@ const summedPrice = cart.reduce()
 
 /*
     TEXT ANSWER HERE
+    customer needs a first name, last name, a list of a food and prices he/she ordered, 
+    if he qualifies for a senior discount, 
 
 */
 
@@ -89,3 +93,10 @@ const summedPrice = cart.reduce()
 */
 
 //CODE HERE
+
+customer1 = {
+    firstName: "Justin",
+    lastName: "lowry",
+    order: [["Fries", 3], ["Burger", 5]],
+    seniorDiscount: false
+}
